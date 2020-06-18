@@ -1,4 +1,4 @@
-package com.ruanshuai;
+package com.ruanshuai.ds;
 
 /**
  * @author ruanshuai

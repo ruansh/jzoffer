@@ -1,6 +1,6 @@
 package com.ruanshuai._03;
 
-import com.ruanshuai.ListNode;
+import com.ruanshuai.ds.ListNode;
 
 import java.util.ArrayList;
 
