@@ -20,6 +20,7 @@ public class MainClass {
 //            System.out.println(method);
             Object o = a.getDeclaredMethod("func", String.class);
             System.out.println(method.invoke(b, "hello"));
+//            Thread
         } catch (Exception e) {
             e.printStackTrace();
         }
