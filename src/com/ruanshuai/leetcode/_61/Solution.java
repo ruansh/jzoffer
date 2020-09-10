@@ -5,6 +5,7 @@ import java.util.Arrays;
 /**
  * @author ruanshuai
  * @date 2020/9/7
+ * 扑克牌顺子
  */
 
 class Solution {

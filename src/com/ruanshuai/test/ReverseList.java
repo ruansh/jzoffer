@@ -1,6 +1,6 @@
 package com.ruanshuai.test;
 
-import com.ruanshuai.ds.ListNode;
+import com.ruanshuai.jzoffer.ds.ListNode;
 
 import java.util.Stack;
 
