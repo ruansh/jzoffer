@@ -16,12 +16,22 @@ public class Solution {
     }
 
     public int pop() {
-        while (stack2.isEmpty()) {
+        if (stack2.isEmpty()) {
             while (!stack1.isEmpty()) {
                 stack2.push(stack1.pop());
             }
         }
 
         return stack2.pop();
+    }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        solution.push(1);
+        solution.push(2);
+        System.out.println(solution.pop());
+        solution.push(3);
+        System.out.println(solution.pop());
+        System.out.println(solution.pop());
     }
 }
