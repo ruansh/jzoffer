@@ -38,11 +38,7 @@ public class Main {
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= m; j++) {
                 if (w[i - 1] <= j) {
-                    if (arr[i - 1][j] < arr[i - 1][j - w[i - 1]] + v[i - 1]) {
-                        arr[i][j] = arr[i - 1][j - w[i - 1]] + v[i - 1];
-                    } else {
-                        arr[i][j] = arr[i - 1][j];
-                    }
+                    arr[i][j] = Math.max(arr[i - 1][j], arr[i - 1][j - w[i - 1]] + v[i - 1]);
                 } else {
                     arr[i][j] = arr[i - 1][j];
                 }
