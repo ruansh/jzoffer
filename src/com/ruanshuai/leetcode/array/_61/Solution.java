@@ -1,4 +1,4 @@
-package com.ruanshuai.leetcode._61;
+package com.ruanshuai.leetcode.array._61;
 
 import java.util.Arrays;
 

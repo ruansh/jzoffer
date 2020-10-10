@@ -1,4 +1,4 @@
-package com.ruanshuai.leetcode._20;
+package com.ruanshuai.leetcode.stack._20;
 
 import java.util.Stack;
 

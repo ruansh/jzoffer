@@ -1,4 +1,4 @@
-package com.ruanshuai.leetcode._42;
+package com.ruanshuai.leetcode.dp._42;
 
 /**
  * @author ruanshuai

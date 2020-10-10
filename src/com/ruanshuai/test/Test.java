@@ -1,8 +1,9 @@
 package com.ruanshuai.test;
 
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ThreadPoolExecutor;
 
 /**
  * @author ruanshuai
@@ -12,6 +13,15 @@ import java.util.Map;
 public class Test extends Thread {
 
     public static void main(String[] args) {
-        Map<String, String> map = new HashMap<>();
+        Map<String, String> map1 = new HashMap<>();
+        Map<String, String> map2 = new Hashtable<>();
+        Map<String, String> map3 = new ConcurrentHashMap<>();
+
+        Set<String> set1 = new HashSet<>();
+        Set<String> set2 = new TreeSet<>();
+
+        String str = "abc";
+
+
     }
 }

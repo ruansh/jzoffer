@@ -5,24 +5,23 @@ package com.ruanshuai.test.thread;
  * @date 2020/9/25
  */
 
-public class TestThread {
+public class TestThread implements Runnable{
 
-    public static void main(String[] args) {
-        for (int i = 0; i < 10; i++) {
-            Thread thread = new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    while (true) {
-                        try {
-                            System.out.println("***");
-                            Thread.sleep(10);
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-                    }
-                }
-            });
-            thread.start();
+    public static void main(String[] args) throws InterruptedException {
+        TestThread testThread  =new TestThread();
+        new Thread(testThread).start();
+        Thread.sleep(5000);
+    }
+
+    @Override
+    public void run() {
+        while (true){
+            try {
+                Thread.sleep(1000);
+                System.out.println("线程运行");
+            }catch (Exception e){
+                e.printStackTrace();
+            }
         }
     }
 }
